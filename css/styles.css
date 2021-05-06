@@ -756,7 +756,7 @@ img {
   border-radius: 2px;
 }
 .check-icon {
-  fill: #ffffff;
+  fill: transparent;
   display: block;
   width: 16px;
   height: 16px;
@@ -764,6 +764,9 @@ img {
 .modal-form-term:checked + .modal-form-term-desc .check-wrap {
   background-color: var(--accent-color);
   border: none;
+}
+.modal-form-term:checked + .modal-form-term-desc .check-icon {
+  fill: white;
 }
 .modal-form-term-link {
   color: var(--accent-color);

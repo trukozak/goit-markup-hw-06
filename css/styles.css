@@ -766,7 +766,7 @@ img {
   border: none;
 }
 .modal-form-term:checked + .modal-form-term-desc .check-icon {
-  fill: white;
+  fill: var(--primary-white-color);
 }
 .modal-form-term-link {
   color: var(--accent-color);

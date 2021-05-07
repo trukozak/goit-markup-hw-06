@@ -520,16 +520,20 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-contact {
-  margin-right: 70px;
-}
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
+}
+.footer-left-side {
+  display: flex;
+  flex-basis: calc((100% - 30px) / 2);
+}
+.footer-contact {
+  flex-basis: calc((100% - 30px) / 2);
 }
 .footer-social-links {
-  width: 206px;
-  height: 80px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 .logo-secondary {
   display: inline-block;
@@ -570,15 +574,15 @@ img {
   fill: var(--primary-white-color);
   background-color: var(--background-color-social);
 }
-
 .footer-right-side {
-  margin-left: 93px;
+  margin-left: 15px;
+  flex-basis: calc((100% - 30px) / 2);
 }
 .footer-subscribe-form {
   display: flex;
 }
 .subscribe-input {
-  width: 358px;
+  min-width: 358px;
   height: 50px;
 
   padding-left: 16px;
@@ -600,6 +604,7 @@ img {
 }
 .button-subscribe {
   display: flex;
+  width: auto;
   padding: 10px 28px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),

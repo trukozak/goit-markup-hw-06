@@ -527,6 +527,8 @@ img {
 }
 .footer-left-side {
   display: flex;
+  justify-content: space-between;
+
   flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .footer-contact {
@@ -575,18 +577,20 @@ img {
   background-color: var(--background-color-social);
 }
 .footer-right-side {
-  margin-left: 15px;
   flex-basis: calc(100% / 2 - var(--card-set-gap));
+}
+.footer-form-label {
+  flex-grow: 1;
+  margin-right: 12px;
 }
 .footer-subscribe-form {
   display: flex;
 }
 .subscribe-input {
-  min-width: 358px;
+  width: 100%;
   height: 50px;
 
   padding-left: 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 
@@ -716,7 +720,8 @@ img {
 }
 .modal-form-icon {
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -745,15 +750,14 @@ img {
   border-color: var(--accent-color);
 }
 .modal-form-term-desc {
-  display: flex;
-  align-items: center;
-  align-items: center;
-  justify-content: center;
-
   color: var(--secondary-text-color);
+}
+.modal-form-checkbox {
+  text-align: center;
 }
 .check-wrap {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 8px;
   width: 16px;
   height: 15px;

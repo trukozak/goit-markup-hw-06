@@ -527,13 +527,13 @@ img {
 }
 .footer-left-side {
   display: flex;
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .footer-contact {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .footer-social-links {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .logo-secondary {
   display: inline-block;
@@ -576,7 +576,7 @@ img {
 }
 .footer-right-side {
   margin-left: 15px;
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc(100% / 2 - var(--card-set-gap));
 }
 .footer-subscribe-form {
   display: flex;

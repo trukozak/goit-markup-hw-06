@@ -751,6 +751,8 @@ img {
   height: 15px;
   border: 3px solid var(--primary-text-color);
   border-radius: 2px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-icon {
   fill: transparent;
@@ -764,6 +766,9 @@ img {
 }
 .modal-form-term:checked + .modal-form-term-desc .check-icon {
   fill: var(--primary-white-color);
+}
+.modal-form-term:focus + .modal-form-term-desc .check-wrap {
+  border-color: var(--accent-color);
 }
 .modal-form-term-link {
   color: var(--accent-color);
